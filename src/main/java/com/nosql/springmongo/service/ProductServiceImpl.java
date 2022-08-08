@@ -34,7 +34,6 @@ public class ProductServiceImpl implements ProductService{
         Product productById = this.findById(id);
         productById.setName(product.getName());
         productById.setPrice(product.getPrice());
-        productById.setQty(product.getQty());
         return productRepository.save(productById);
     }
 
